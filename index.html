@@ -7,20 +7,45 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/d92a3004ed.js" crossorigin="anonymous"></script>
 
     <title>Frontend Mentor | Huddle landing page with single introductory section</title>
   </head>
   <body>
-    <header id="headings"></header>
-    <main id="content"></main>
-    Build The Community Your Fans Will Love Huddle re-imagines the way we build communities. You have a voice, but so
-    does your audience. Create connections with your users as you engage in genuine discussion. Register
+    <div class="page-container">
+      <header>
+        <img src="images/logo.svg" alt="Logo" />
+      </header>
+      <main id="content">
+        <div class="grid-container">
+          <div class="grid-item">
+            <img id="illustration" src="images/illustration-mockups.svg" alt="Illustrations" />
+          </div>
+          <div class="grid-item">
+            <h2>Build The Community<br />Your Fans Will Love</h2>
+            <p>
+              Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create
+              connections with your users as you engage in genuine discussion.
+            </p>
+            <div class="btn">
+              Register
+            </div>
+          </div>
+        </div>
+      </main>
 
-    <footer>
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-        <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
+      <footer>
+        <div class="social-links">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="norefferer">Frontend Mentor</a
+          >.<br />Coded by <a href="#">Marcel Noack</a>.
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
