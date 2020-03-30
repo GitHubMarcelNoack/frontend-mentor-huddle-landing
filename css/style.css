@@ -10,6 +10,7 @@
   padding: 0;
 }
 
+/* Overall container */
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -22,13 +23,10 @@ body {
 
 .page-container {
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
-#content {
-  padding-bottom: 2.5rem;
-}
-
+/* Header Styles */
 header {
   font-family: 'Poppons', sans-serif;
 }
@@ -39,6 +37,7 @@ header img {
   align-self: flex-start;
 }
 
+/* Content Style */
 h2 {
   font-weight: 700;
   padding-bottom: 20px;
@@ -56,9 +55,8 @@ p {
 .grid-container {
   display: grid;
   grid-template-rows: 1fr 0.3fr;
-  /* align-items: center;
-  justify-content: center; */
   row-gap: 20px;
+  padding-bottom: 100px;
 }
 
 .grid-item {
@@ -77,6 +75,7 @@ p {
   width: 150px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
   transition: all 0.5s;
+  text-align: center;
 }
 
 .btn:hover {
@@ -84,17 +83,16 @@ p {
   transform: scale(1.05);
 }
 
+/* Footer style */
 footer {
   display: flex;
   flex-direction: column;
-  justify-content: end;
   align-items: center;
   font-size: small;
   text-align: center;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;
 }
 .social-links {
   display: flex;
@@ -117,5 +115,19 @@ footer {
 }
 
 /* Desktop design adjustments */
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 768px) {
+  .grid-container {
+    grid-template-rows: none;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+  }
+
+  .grid-item {
+    text-align: start;
+    align-items: flex-start;
+  }
+
+  footer {
+    align-items: flex-end;
+  }
 }
