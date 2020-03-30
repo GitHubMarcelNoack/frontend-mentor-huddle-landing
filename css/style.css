@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins&display=swap');
+
+:root {
+  --primary-violet: hsl(257, 40%, 49%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+#headings {
+  font-family: 'Poppons', sans-serif;
+}
+
+/* Desktop design adjustments */
+@media only screen and (min-width: 1440px) {
+}
